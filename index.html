@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<!--
+  ==========================================================================
+  PROJETOS DE SOM — LANDING PAGE
+  ==========================================================================
+
+  ARQUIVOS
+    index.html ........ esta página (textos e estrutura)
+    css/estilo.css .... visual (cores, fontes, layout)
+    img/ .............. fotos da página (veja img/LEIA-ME.txt)
+
+  ONDE EDITAR (use Ctrl+F para encontrar)
+    Preço ............................. "EDITAR PREÇO"        (script no final)
+    Link de checkout .................. "LINK DE CHECKOUT"    (seção 9)
+    Bônus ............................. "EDITAR BONUS"        (seções 6 e 9)
+    Depoimentos ....................... "EDITAR DEPOIMENTOS"  (seção 8)
+    Período de acesso (FAQ) ........... "EDITAR PERÍODO"      (seção 11)
+    Imagem de compartilhamento ........ "EDITAR IMAGEM DE COMPARTILHAMENTO" (head)
+    Fotos ............................. coloque os arquivos em img/ com os nomes indicados
+
+  ORDEM DAS SEÇÕES
+    0.  Faixa superior
+    1.  Hero / oferta inicial
+    2.  Por que ter projetos prontos (desejo/problema)
+    3.  O que você encontra no material
+    4.  Veja o que você pode construir (galeria)
+    5.  Do projeto ao som pronto (passo a passo)
+    6.  Bônus
+    7.  Como você recebe o material
+    8.  Depoimentos
+    9.  Oferta (checkout)
+    10. Segurança
+    11. FAQ
+    12. CTA final
+        Rodapé, barra fixa (celular), ícones e scripts
+  ==========================================================================
+-->
+<html lang="pt-BR">
+<head>
+  <!-- Básico -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos de Som | Projetos de Caixas de Som e Som Automotivo</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="theme-color" content="#0a0c0d">
+
+  <!-- SEO -->
+  <meta name="description" content="Projetos de caixas de som e som automotivo com medidas, referências e detalhes de montagem organizados para você consultar na hora de construir. Acesso digital.">
+  <meta name="author" content="Paginatto Ebooks Ltda">
+
+  <!-- Compartilhamento (Open Graph) -->
+  <meta property="og:title" content="Projetos de Som | Projetos de Caixas de Som e Som Automotivo">
+  <meta property="og:description" content="Tenha projetos organizados com medidas, referências e detalhes de montagem para consultar na hora de construir suas caixas de som.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <!-- EDITAR IMAGEM DE COMPARTILHAMENTO: descomente e coloque a URL absoluta da imagem do produto (ideal 1200x630) -->
+  <!-- <meta property="og:image" content="https://SEU-DOMINIO/projetos-de-som/og-image.webp"> -->
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+
+  <!-- Estilos da página -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       0. FAIXA SUPERIOR
+       ==================================================================== -->
+  <div class="topbar">Oferta especial</div>
+
+
+  <!-- ====================================================================
+       1. HERO / OFERTA INICIAL
+       ==================================================================== -->
+  <header class="hero" id="topo">
+    <div class="wrap hero-grid">
+
+      <!-- Título e promessa -->
+      <div class="hero-top">
+        <span class="kicker">Projete. Corte. Monte.</span>
+        <h1 class="h1">Projetos de som para <span class="hl">tirar suas ideias</span> do papel</h1>
+        <p class="lead">Tenha projetos organizados com medidas, referências e detalhes de montagem para consultar na hora de construir suas caixas de som.</p>
+        <p class="lead-2">
+          <svg class="i" aria-hidden="true"><use href="#i-x"/></svg>
+          <span>Pare de depender de fotos soltas e medidas encontradas aleatoriamente na internet.</span>
+        </p>
+      </div>
+
+      <!-- Foto principal — FOTO: img/hero.jpg (proporção 5:4, ex.: 1000x800) -->
+      <div class="hero-media">
+        <div class="frame">
+          <span class="chip chip--accent"><svg class="i" aria-hidden="true"><use href="#i-speaker"/></svg>Projetos de Som</span>
+          <div class="media">
+            <img class="foto" src="img/hero.jpg" alt="Caixa de som automotivo" width="1000" height="800" loading="eager" fetchpriority="high" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado para a imagem principal: caixa de som automotivo">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-hero"/></svg>
+              <span class="ph-label">Imagem principal · caixa de som automotivo</span>
+            </div>
+          </div>
+          <span class="chip chip--dark"><svg class="i" aria-hidden="true"><use href="#i-devices"/></svg>Acesso digital</span>
+        </div>
+      </div>
+
+      <!-- Benefícios, preço e botão -->
+      <div class="hero-bottom">
+        <ul class="checks">
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Projetos organizados</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Medidas para consulta</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Passo a passo visual</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Acesso digital</li>
+        </ul>
+
+        <!-- Preço: preenchido automaticamente (ver "EDITAR PREÇO" no final da página) -->
+        <div class="price">
+          <span class="price-old">De: <s data-preco-antigo>R$ 59,90</s></span>
+          <span class="price-now">Por apenas <strong data-preco-atual>R$ 5,90</strong></span>
+          <span class="badge-off" data-desconto hidden></span>
+        </div>
+
+        <a href="#oferta" class="btn btn-primary btn-pulse">Quero acessar os projetos <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="micro">Pagamento único • Acesso digital</p>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ====================================================================
+       2. POR QUE TER PROJETOS PRONTOS (desejo/problema)
+       ==================================================================== -->
+  <section class="section section--alt grid-bg">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Menos improviso</span>
+        <h2 class="h2">Por que ter projetos prontos <span class="hl">faz diferença?</span></h2>
+      </div>
+
+      <div class="cards-3">
+        <article class="card">
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-ruler"/></svg></div>
+          <h3>Pare de improvisar medidas</h3>
+          <p>Em vez de tentar descobrir cada medida olhando fotos ou vídeos, consulte projetos organizados e tenha uma referência muito mais clara antes de começar.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></div>
+          <h3>Visualize antes de construir</h3>
+          <p>Entenda melhor o formato, a distribuição dos componentes e a estrutura da caixa antes de cortar o material.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></div>
+          <h3>Economize tempo na execução</h3>
+          <p>Com uma referência organizada em mãos, fica muito mais simples planejar cortes, montagem e acabamento.</p>
+        </article>
+      </div>
+
+      <p class="impact">Do projeto na tela para a <span class="hl">caixa pronta</span> na sua frente.</p>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       3. O QUE VOCÊ ENCONTRA NO MATERIAL
+       FOTOS: img/conteudo-1.jpg, conteudo-2.jpg, conteudo-3.jpg (16:10, ex.: 800x500)
+       ==================================================================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Conteúdo do material</span>
+        <h2 class="h2">Veja o que você encontra <span class="hl">no material</span></h2>
+      </div>
+
+      <div class="cards-3">
+        <article class="feature">
+          <div class="media">
+            <img class="foto" src="img/conteudo-1.jpg" alt="Projetos de caixas de som" width="800" height="500" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: desenhos de projetos de caixas">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-plans"/></svg>
+              <span class="ph-label">Imagem · desenhos de projetos</span>
+            </div>
+          </div>
+          <div class="feature-body">
+            <span class="num">01</span>
+            <h3>Projetos de caixas de som</h3>
+            <p>Tenha diferentes referências de caixas para consultar e escolher o modelo que mais combina com o seu objetivo.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="media">
+            <img class="foto" src="img/conteudo-2.jpg" alt="Medidas e detalhes de montagem" width="800" height="500" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: projeto técnico ou MDF sendo medido">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-measure"/></svg>
+              <span class="ph-label">Imagem · MDF sendo medido</span>
+            </div>
+          </div>
+          <div class="feature-body">
+            <span class="num">02</span>
+            <h3>Medidas e detalhes de montagem</h3>
+            <p>Consulte dimensões, distribuição das peças e informações que ajudam a entender como cada projeto é construído.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="media">
+            <img class="foto" src="img/conteudo-3.jpg" alt="Caixa de som sendo montada" width="800" height="500" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: caixa de som sendo construída">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-build"/></svg>
+              <span class="ph-label">Imagem · caixa em construção</span>
+            </div>
+          </div>
+          <div class="feature-body">
+            <span class="num">03</span>
+            <h3>Do projeto à montagem</h3>
+            <p>Use o material como referência durante o processo de corte, montagem, instalação dos equipamentos e acabamento.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="tagline">Menos improviso. <span class="hl">Mais clareza na montagem.</span></p>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       4. VEJA O QUE VOCÊ PODE CONSTRUIR (galeria)
+       FOTOS: img/galeria-1.jpg ... galeria-6.jpg (quadradas, ex.: 800x800)
+       ==================================================================== -->
+  <section class="section section--alt grid-bg">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Da ideia para a oficina</span>
+        <h2 class="h2">Veja o que você <span class="hl">pode construir</span></h2>
+        <p class="sub">Projetos para você consultar, adaptar às suas necessidades e transformar em projetos reais.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot">
+          <div class="media">
+            <img class="foto" src="img/galeria-1.jpg" alt="Caixa trio" width="800" height="800" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: caixa trio">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-trio"/></svg>
+              <span class="ph-label">Imagem · caixa trio</span>
+            </div>
+          </div>
+          <figcaption>Caixa trio <small>#01</small></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="media">
+            <img class="foto" src="img/galeria-2.jpg" alt="Caixa com subwoofer" width="800" height="800" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: caixa com subwoofer">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-sub"/></svg>
+              <span class="ph-label">Imagem · caixa com subwoofer</span>
+            </div>
+          </div>
+          <figcaption>Caixa com subwoofer <small>#02</small></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="media">
+            <img class="foto" src="img/galeria-3.jpg" alt="Projeto compacto" width="800" height="800" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: projeto compacto">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-compact"/></svg>
+              <span class="ph-label">Imagem · projeto compacto</span>
+            </div>
+          </div>
+          <figcaption>Projeto compacto <small>#03</small></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="media">
+            <img class="foto" src="img/galeria-4.jpg" alt="Projeto para porta-malas" width="800" height="800" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: projeto para porta-malas">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-trunk"/></svg>
+              <span class="ph-label">Imagem · projeto para porta-malas</span>
+            </div>
+          </div>
+          <figcaption>Projeto para porta-malas <small>#04</small></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="media">
+            <img class="foto" src="img/galeria-5.jpg" alt="Caixa vertical" width="800" height="800" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: caixa vertical">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-vertical"/></svg>
+              <span class="ph-label">Imagem · caixa vertical</span>
+            </div>
+          </div>
+          <figcaption>Caixa vertical <small>#05</small></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="media">
+            <img class="foto" src="img/galeria-6.jpg" alt="Caixa personalizada" width="800" height="800" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: caixa personalizada">
+              <svg class="ph-art" viewBox="0 0 200 150" aria-hidden="true"><use href="#art-custom"/></svg>
+              <span class="ph-label">Imagem · caixa personalizada</span>
+            </div>
+          </div>
+          <figcaption>Caixa personalizada <small>#06</small></figcaption>
+        </figure>
+      </div>
+
+      <p class="swipe-hint">Arraste para ver mais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></p>
+
+      <div class="cta-row">
+        <p class="tagline">Escolha o projeto e <span class="hl">comece a construir.</span></p>
+        <a href="#oferta" class="btn btn-primary">Quero meus projetos de som <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       5. DO PROJETO AO SOM PRONTO (passo a passo)
+       ==================================================================== -->
+  <section class="section grid-bg">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Passo a passo</span>
+        <h2 class="h2">Do projeto ao <span class="hl">som pronto</span></h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-dot"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg></div>
+          <div>
+            <span class="step-n">PASSO 01</span>
+            <h3>Escolha o projeto</h3>
+            <p>Veja as opções disponíveis e escolha o modelo que deseja construir.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-dot"><svg class="i" aria-hidden="true"><use href="#i-ruler"/></svg></div>
+          <div>
+            <span class="step-n">PASSO 02</span>
+            <h3>Confira as medidas</h3>
+            <p>Analise estrutura, dimensões e detalhes antes de começar.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-dot"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></div>
+          <div>
+            <span class="step-n">PASSO 03</span>
+            <h3>Separe o material</h3>
+            <p>Planeje MDF, componentes e ferramentas necessárias.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-dot"><svg class="i" aria-hidden="true"><use href="#i-wrench"/></svg></div>
+          <div>
+            <span class="step-n">PASSO 04</span>
+            <h3>Faça a montagem</h3>
+            <p>Utilize o projeto como referência durante a execução.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-dot"><svg class="i" aria-hidden="true"><use href="#i-speaker"/></svg></div>
+          <div>
+            <span class="step-n">PASSO 05</span>
+            <h3>Finalize o seu som</h3>
+            <p>Instale os equipamentos, faça o acabamento e veja o projeto ganhar forma.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       6. BÔNUS
+       EDITAR BONUS AQUI — bônus único: Vídeo aulas exclusivas.
+       Foto: img/bonus-1.jpg (2:1, ex.: 800x400).
+       Se o produto não tiver bônus, remova esta <section> inteira
+       E o bloco "offer-bonus" dentro da oferta (seção 9).
+       ==================================================================== -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Bônus</span>
+        <h2 class="h2">Bônus incluso <span class="hl">no seu acesso</span></h2>
+        <p class="sub">Além do material principal, você também recebe:</p>
+      </div>
+
+      <div class="bonus-grid bonus-grid--single">
+        <!-- EDITAR BONUS AQUI -->
+        <article class="bonus">
+          <div class="media">
+            <span class="bonus-tag">BÔNUS</span>
+            <img class="foto" src="img/bonus-1.jpg" alt="Vídeo aula de montagem de caixa de som no celular" width="800" height="400" loading="lazy" onerror="this.remove()">
+            <div class="ph" role="img" aria-label="Espaço reservado: imagem do bônus">
+              <svg class="ph-art ph-art--icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gift"/></svg>
+              <span class="ph-label">Imagem do bônus</span>
+            </div>
+          </div>
+          <div class="bonus-body">
+            <h3>Vídeo aulas exclusivas</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       7. COMO VOCÊ RECEBE O MATERIAL
+       ==================================================================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Acesso</span>
+        <h2 class="h2">Como você recebe <span class="hl">o material?</span></h2>
+        <p class="sub">Medidas e referências na palma da sua mão.</p>
+      </div>
+
+      <div class="cards-3">
+        <article class="access-card">
+          <span class="access-n" aria-hidden="true">1</span>
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-cart"/></svg></div>
+          <span class="access-step">PASSO 1</span>
+          <h3>Faça seu pedido</h3>
+          <p>Escolha a opção de compra e conclua o pagamento.</p>
+        </article>
+
+        <article class="access-card">
+          <span class="access-n" aria-hidden="true">2</span>
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-unlock"/></svg></div>
+          <span class="access-step">PASSO 2</span>
+          <h3>Receba seu acesso</h3>
+          <p>Após a confirmação, você receberá as instruções para acessar o conteúdo digital.</p>
+        </article>
+
+        <article class="access-card">
+          <span class="access-n" aria-hidden="true">3</span>
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-devices"/></svg></div>
+          <span class="access-step">PASSO 3</span>
+          <h3>Acesse quando precisar</h3>
+          <p>Abra o material pelo celular, tablet ou computador sempre que quiser consultar seus projetos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       8. DEPOIMENTOS
+       EDITAR DEPOIMENTOS AQUI — use somente depoimentos reais.
+       FOTOS: img/depoimento-1.jpg, depoimento-2.jpg, depoimento-3.jpg
+       (prints de conversa/avaliação; a altura se ajusta à imagem, sem cortar).
+       Para adicionar mais, duplique um bloco <div class="depo"> e troque o número do arquivo.
+       ==================================================================== -->
+  <section class="section section--alt grid-bg">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Depoimentos</span>
+        <h2 class="h2">Quem gosta de som <span class="hl">vai entender</span></h2>
+        <p class="sub">Veja a experiência de quem já teve acesso ao material.</p>
+      </div>
+
+      <div class="cards-3">
+        <div class="depo">
+          <img class="foto" src="img/depoimento-1.png" alt="Depoimento de cliente" loading="lazy" onerror="this.remove()">
+          <div class="depo-ph">
+            <svg class="i" aria-hidden="true"><use href="#i-quote"/></svg>
+            <strong>Depoimento #1</strong>
+            <span>Espaço reservado para depoimento real</span>
+          </div>
+        </div>
+
+        <div class="depo">
+          <img class="foto" src="img/depoimento-2.png" alt="Depoimento de cliente" loading="lazy" onerror="this.remove()">
+          <div class="depo-ph">
+            <svg class="i" aria-hidden="true"><use href="#i-quote"/></svg>
+            <strong>Depoimento #2</strong>
+            <span>Espaço reservado para depoimento real</span>
+          </div>
+        </div>
+
+        <div class="depo">
+          <img class="foto" src="img/depoimento-3.png" alt="Depoimento de cliente" loading="lazy" onerror="this.remove()">
+          <div class="depo-ph">
+            <svg class="i" aria-hidden="true"><use href="#i-quote"/></svg>
+            <strong>Depoimento #3</strong>
+            <span>Espaço reservado para depoimento real</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       9. OFERTA (checkout)
+       ==================================================================== -->
+  <div class="offer-band">
+    <svg class="i" aria-hidden="true"><use href="#i-zap"/></svg>
+    <span>Oferta especial</span>
+    <svg class="i" aria-hidden="true"><use href="#i-zap"/></svg>
+  </div>
+
+  <section class="section offer" id="oferta">
+    <div class="wrap">
+      <div class="head">
+        <span class="pill">Oferta especial</span>
+        <h2 class="h2">Acesso aos <span class="hl">projetos de som</span></h2>
+        <p class="sub">Tenha seus projetos reunidos em um só lugar e consulte sempre que precisar.</p>
+      </div>
+
+      <div class="offer-box">
+        <div class="offer-name">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-cone"/></svg>
+          Projetos de Som
+        </div>
+
+        <!-- O que está incluso -->
+        <ul class="offer-list">
+          <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Projetos organizados</li>
+          <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Medidas e referências</li>
+          <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Conteúdo digital</li>
+          <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Acesso pelo celular, tablet ou computador</li>
+          <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Pagamento único</li>
+        </ul>
+
+        <!-- EDITAR BONUS AQUI (lista de bônus dentro da oferta — remova este bloco se não houver bônus) -->
+        <div class="offer-bonus">
+          <p>+ Bônus</p>
+          <ul class="offer-list">
+            <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-gift"/></svg></span>Vídeo aulas exclusivas</li>
+          </ul>
+        </div>
+
+        <!-- Preço: preenchido automaticamente (ver "EDITAR PREÇO" no final da página) -->
+        <div class="offer-price">
+          <span class="old">De: <s data-preco-antigo>R$ 59,90</s> <span class="badge-off" data-desconto hidden></span></span>
+          <span class="label">Por apenas</span>
+          <strong class="now" data-preco-atual>R$ 5,90</strong>
+          <span class="once">Pagamento único</span>
+        </div>
+
+        <!-- ATENÇÃO — LINK DE CHECKOUT: mantido exatamente como estava na página original.
+             Ele ainda aponta para o produto antigo (p=receitas-de-geladinho-gourmet).
+             Troque pelo link do checkout de PROJETOS DE SOM antes de publicar.
+             As UTMs são repassadas ao checkout pelo script da UTMify (fim da página). -->
+        <a href="https://somasoundsolutions.mycartpanda.com/checkout/213333018:1" data-checkout class="btn btn-primary btn-block btn-pulse">Sim, quero acessar os projetos!</a>
+
+        <p class="micro">Pagamento único • Acesso digital</p>
+        <p class="secure"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>Compra segura</p>
+      </div>
+
+      <p class="tagline">Um material feito para quem <span class="hl">realmente gosta de som.</span></p>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       10. SEGURANÇA
+       ==================================================================== -->
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Confiança</span>
+        <h2 class="h2">Sua compra <span class="hl">com segurança</span></h2>
+      </div>
+
+      <div class="cards-3">
+        <article class="access-card">
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></div>
+          <h3>Pagamento Seguro</h3>
+          <p>Seus dados protegidos com criptografia.</p>
+        </article>
+
+        <article class="access-card">
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-devices"/></svg></div>
+          <h3>Conteúdo Digital</h3>
+          <p>Produto 100% digital, sem frete e sem espera pela entrega física.</p>
+        </article>
+
+        <article class="access-card">
+          <div class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-zap"/></svg></div>
+          <h3>Acesso Prático</h3>
+          <p>Consulte pelo celular, tablet ou computador sempre que precisar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       11. FAQ — PERGUNTAS FREQUENTES
+       Para adicionar uma pergunta, duplique um bloco <div class="faq-item">.
+       ==================================================================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Dúvidas</span>
+        <h2 class="h2">Perguntas <span class="hl">frequentes</span></h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item">
+          <button type="button" class="faq-button">
+            <span>O que vou receber?</span>
+            <svg class="faq-icon i" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-content-wrapper">
+            <div class="faq-content opacity-0">Você receberá acesso ao material digital com projetos de som e conteúdos organizados para consulta durante o planejamento e construção.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-button">
+            <span>Preciso ser profissional?</span>
+            <svg class="faq-icon i" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-content-wrapper">
+            <div class="faq-content opacity-0">Não. O material pode ser utilizado tanto por quem já trabalha com montagem quanto por quem está começando e quer referências mais organizadas para seus projetos.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-button">
+            <span>Como recebo o conteúdo?</span>
+            <svg class="faq-icon i" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-content-wrapper">
+            <div class="faq-content opacity-0">Após a confirmação do pagamento, você receberá as instruções para acessar o material digital.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-button">
+            <span>Posso acessar pelo celular?</span>
+            <svg class="faq-icon i" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-content-wrapper">
+            <div class="faq-content opacity-0">Sim. O conteúdo poderá ser consultado em dispositivos compatíveis, como celular, tablet ou computador.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-button">
+            <span>O material é físico?</span>
+            <svg class="faq-icon i" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="faq-content-wrapper">
+            <div class="faq-content opacity-0">Não. Trata-se de um produto digital.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-button">
+            <span>Por quanto tempo posso acessar?</span>
+            <svg class="faq-icon i" aria-hidden="true"><use href="#i-chevron"/></svg>
+          </button>
+          <!-- EDITAR PERÍODO DE ACESSO: informe somente o período realmente configurado para o produto.
+               Não afirmar acesso vitalício sem confirmação. -->
+          <div class="faq-content-wrapper">
+            <div class="faq-content opacity-0">[PERÍODO DE ACESSO CONFIGURADO PARA O PRODUTO]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       12. CTA FINAL
+       ==================================================================== -->
+  <section class="section final">
+    <div class="wrap">
+      <span class="kicker">Projete. Corte. Monte.</span>
+      <h2 class="h2">Seu próximo projeto <span class="hl">começa aqui.</span></h2>
+      <p class="sub">Tenha projetos organizados com medidas, referências e detalhes de montagem para consultar na hora de construir.</p>
+      <div class="cta-row">
+        <a href="#oferta" class="btn btn-primary btn-pulse">Quero acessar os projetos <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <p class="micro">Pagamento único • Acesso digital</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================================
+       RODAPÉ
+       ==================================================================== -->
+  <footer class="footer">
+    <strong>PROJETOS DE SOM</strong><br>
+    © <span id="year"></span> Paginatto Ebooks Ltda.
+  </footer>
+
+
+  <!-- ====================================================================
+       BARRA FIXA DE COMPRA (somente celular)
+       Aparece quando o visitante não está vendo o hero nem a oferta.
+       ==================================================================== -->
+  <div class="sticky-cta" id="sticky-cta">
+    <div class="sticky-price">
+      <small>Por apenas</small>
+      <strong data-preco-atual>R$ 5,90</strong>
+    </div>
+    <a href="#oferta" class="btn btn-primary">Quero acessar</a>
+  </div>
+
+
+  <!-- ====================================================================
+       BIBLIOTECA DE ÍCONES E DESENHOS TÉCNICOS
+       Usados na página com <use href="#id">. Os desenhos "art-*" aparecem
+       nos campos de foto enquanto as fotos não são adicionadas.
+       ==================================================================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+
+    <!-- Ícones (24x24) -->
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-speaker" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M12 6h.01"/><circle cx="12" cy="14" r="4"/><path d="M12 14h.01"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+    <symbol id="i-unlock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></symbol>
+    <symbol id="i-cone" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21"/><circle cx="24" cy="24" r="14" opacity=".6"/><circle cx="24" cy="24" r="5"/></symbol>
+
+    <!-- Desenhos técnicos dos campos de foto (200x150) -->
+    <symbol id="art-hero" viewBox="0 0 200 150">
+      <path d="M30 42h120v78H30z"/><path d="M30 42l22-16h120l-22 16"/><path d="M150 120l22-16V26"/>
+      <path d="M60 50v62M120 50v62M24 81h132" stroke-dasharray="2 3" opacity=".35"/>
+      <circle cx="60" cy="81" r="24"/><circle cx="60" cy="81" r="16" opacity=".6"/><circle cx="60" cy="81" r="5"/>
+      <circle cx="120" cy="81" r="24"/><circle cx="120" cy="81" r="16" opacity=".6"/><circle cx="120" cy="81" r="5"/>
+      <g opacity=".6"><circle cx="35" cy="47" r="1.2"/><circle cx="145" cy="47" r="1.2"/><circle cx="35" cy="115" r="1.2"/><circle cx="145" cy="115" r="1.2"/></g>
+      <path d="M30 132h120M30 128v8M150 128v8M18 42v78M14 42h8M14 120h8" opacity=".55"/>
+      <g fill="currentColor" stroke="none" font-size="7" font-family="Barlow Condensed,Arial Narrow,sans-serif" letter-spacing="1" text-anchor="middle"><text x="90" y="145">LARGURA</text><text x="10" y="81" transform="rotate(-90 10 81)">ALTURA</text></g>
+    </symbol>
+
+    <symbol id="art-trio" viewBox="0 0 200 150">
+      <path d="M20 35h160v80H20z"/>
+      <circle cx="58" cy="75" r="26"/><circle cx="58" cy="75" r="18" opacity=".6"/><circle cx="58" cy="75" r="6"/>
+      <circle cx="142" cy="75" r="26"/><circle cx="142" cy="75" r="18" opacity=".6"/><circle cx="142" cy="75" r="6"/>
+      <rect x="86" y="45" width="28" height="22" rx="2"/><rect x="93" y="50" width="14" height="12" rx="1" opacity=".6"/>
+      <circle cx="100" cy="95" r="9"/><circle cx="100" cy="95" r="3"/>
+      <path d="M20 128h160M20 124v8M180 124v8" opacity=".55"/>
+      <text x="100" y="142" fill="currentColor" stroke="none" font-size="7" font-family="Barlow Condensed,Arial Narrow,sans-serif" letter-spacing="1" text-anchor="middle">LARGURA</text>
+    </symbol>
+
+    <symbol id="art-sub" viewBox="0 0 200 150">
+      <path d="M45 22h110v100H45z"/>
+      <circle cx="100" cy="66" r="34"/><circle cx="100" cy="66" r="25" opacity=".6"/><circle cx="100" cy="66" r="9"/>
+      <path d="M100 28v76M58 66h84" stroke-dasharray="2 3" opacity=".35"/>
+      <rect x="55" y="108" width="90" height="7" rx="1.5"/>
+      <path d="M168 22v100M164 22h8M164 122h8M45 134h110M45 130v8M155 130v8" opacity=".55"/>
+      <g fill="currentColor" stroke="none" font-size="7" font-family="Barlow Condensed,Arial Narrow,sans-serif" letter-spacing="1" text-anchor="middle"><text x="100" y="146">LARGURA</text><text x="180" y="72" transform="rotate(90 180 72)">ALTURA</text></g>
+    </symbol>
+
+    <symbol id="art-compact" viewBox="0 0 200 150">
+      <path d="M62 45h76v64H62z"/><path d="M62 45l14-10h76l-14 10"/><path d="M138 109l14-10V35"/>
+      <circle cx="100" cy="77" r="22"/><circle cx="100" cy="77" r="15" opacity=".6"/><circle cx="100" cy="77" r="5"/>
+      <path d="M62 122h76M62 118v8M138 118v8" opacity=".55"/>
+      <text x="100" y="136" fill="currentColor" stroke="none" font-size="7" font-family="Barlow Condensed,Arial Narrow,sans-serif" letter-spacing="1" text-anchor="middle">COMPACTA</text>
+    </symbol>
+
+    <symbol id="art-trunk" viewBox="0 0 200 150">
+      <path d="M60 36h110v84H30z"/>
+      <ellipse cx="45" cy="78" rx="6" ry="26" transform="rotate(20 45 78)"/>
+      <path d="M52.4 57.3 74.1 79.9 68.7 94.9 37.6 98.7" stroke-dasharray="3 3" opacity=".5"/>
+      <path d="M14 120h172" opacity=".35"/>
+      <path d="M182 36v84M178 36h8M178 120h8M30 132h140M30 128v8M170 128v8" opacity=".55"/>
+      <g fill="currentColor" stroke="none" font-size="7" font-family="Barlow Condensed,Arial Narrow,sans-serif" letter-spacing="1" text-anchor="middle"><text x="100" y="145">BASE</text><text x="192" y="78" transform="rotate(90 192 78)">ALTURA</text></g>
+    </symbol>
+
+    <symbol id="art-vertical" viewBox="0 0 200 150">
+      <path d="M72 12h56v126H72z"/>
+      <circle cx="100" cy="48" r="22"/><circle cx="100" cy="48" r="15" opacity=".6"/><circle cx="100" cy="48" r="4"/>
+      <circle cx="100" cy="104" r="22"/><circle cx="100" cy="104" r="15" opacity=".6"/><circle cx="100" cy="104" r="4"/>
+      <path d="M58 12v126M54 12h8M54 138h8" opacity=".55"/>
+      <text x="48" y="75" fill="currentColor" stroke="none" font-size="7" font-family="Barlow Condensed,Arial Narrow,sans-serif" letter-spacing="1" text-anchor="middle" transform="rotate(-90 48 75)">ALTURA</text>
+    </symbol>
+
+    <symbol id="art-custom" viewBox="0 0 200 150">
+      <path d="M20 126V60c0-26 20-42 44-42h116v108z" stroke-dasharray="3 4" opacity=".4"/>
+      <path d="M28 118V66c0-20 16-34 36-34h108v86z"/>
+      <circle cx="78" cy="82" r="24"/><circle cx="78" cy="82" r="16" opacity=".6"/><circle cx="78" cy="82" r="5"/>
+      <circle cx="140" cy="82" r="18"/><circle cx="140" cy="82" r="11" opacity=".6"/><circle cx="140" cy="82" r="3"/>
+      <path d="M36 110h128" stroke-dasharray="1 4" stroke-width="2.4"/>
+    </symbol>
+
+    <symbol id="art-plans" viewBox="0 0 200 150">
+      <path d="M24 14h152v122H24z"/>
+      <path d="M36 28h60v44H36z"/><circle cx="54" cy="50" r="10"/><circle cx="78" cy="50" r="10"/><circle cx="54" cy="50" r="3"/><circle cx="78" cy="50" r="3"/>
+      <path d="M110 72h52V28h-36z"/>
+      <path d="M36 86h70v38H36z"/><path d="M71 86v38" stroke-dasharray="3 3" opacity=".5"/>
+      <path d="M36 80h60M36 77v6M96 77v6M104 28v44M101 28h6M101 72h6" opacity=".5"/>
+      <path d="M120 106h44v20h-44zM120 113h44M140 113v13" opacity=".7"/>
+    </symbol>
+
+    <symbol id="art-measure" viewBox="0 0 200 150">
+      <path d="M22 22h156v10H22z"/>
+      <path d="M22 26h156" stroke-width="6" stroke-dasharray="1 7" stroke-linecap="butt" opacity=".7"/>
+      <path d="M22 44h156v84H22z"/>
+      <path d="M22 60h156M22 78h156M22 98h156M22 114h156" opacity=".12"/>
+      <path d="M78 44v84M134 44v84M22 86h56" stroke-dasharray="4 3"/>
+      <circle cx="106" cy="86" r="20" stroke-dasharray="4 3"/>
+      <g fill="currentColor" stroke="none" font-size="9" font-family="Barlow Condensed,Arial Narrow,sans-serif" text-anchor="middle"><text x="50" y="68">A</text><text x="50" y="110">B</text><text x="106" y="122">C</text><text x="156" y="90">D</text></g>
+    </symbol>
+
+    <symbol id="art-build" viewBox="0 0 200 150">
+      <path d="M92 52h78v60H92z" stroke-dasharray="4 3"/>
+      <path d="M92 52l18-14h78l-18 14"/><path d="M170 112l18-14V38"/><path d="M92 52v60h78"/>
+      <path d="M110 38v60l-18 14M110 98h78" stroke-dasharray="2 3" opacity=".4"/>
+      <path d="M14 52h60v60H14z"/><circle cx="44" cy="82" r="19"/><circle cx="44" cy="82" r="12" opacity=".6"/><circle cx="44" cy="82" r="4"/>
+      <path d="M77 82h11M84 78l4 4-4 4"/>
+      <path d="M14 126h174" opacity=".35"/>
+    </symbol>
+  </svg>
+
+
+  <!-- ====================================================================
+       SCRIPTS
+       ==================================================================== -->
+
+  <!-- Preço e barra fixa -->
+  <script>
+    // ==========================================================
+    // EDITAR PREÇO AQUI — aparece no hero, na oferta e na barra fixa.
+    // O selo "% OFF" é calculado automaticamente e só aparece
+    // quando os dois preços forem valores válidos.
+    // ==========================================================
+    const precoAntigo = "R$ 59,90";
+    const precoAtual = "R$ 5,90";
+
+    (function () {
+      // Converte "R$ 1.297,90" em 1297.9 (ou NaN se não for um valor)
+      const valor = (texto) => {
+        const n = parseFloat(String(texto).replace(/[^\d,]/g, "").replace(",", "."));
+        return isFinite(n) ? n : NaN;
+      };
+
+      document.querySelectorAll("[data-preco-antigo]").forEach((el) => { el.textContent = precoAntigo; });
+      document.querySelectorAll("[data-preco-atual]").forEach((el) => { el.textContent = precoAtual; });
+
+      const antigo = valor(precoAntigo);
+      const atual = valor(precoAtual);
+      const desconto = antigo > atual && atual > 0 ? Math.round((1 - atual / antigo) * 100) : 0;
+
+      document.querySelectorAll("[data-desconto]").forEach((el) => {
+        if (desconto > 0) {
+          el.textContent = desconto + "% OFF";
+          el.hidden = false;
+        }
+      });
+
+      // Barra fixa (celular): visível somente quando nem o hero nem a oferta estão na tela
+      const barra = document.getElementById("sticky-cta");
+      const hero = document.getElementById("topo");
+      const oferta = document.getElementById("oferta");
+
+      if (barra && hero && oferta && "IntersectionObserver" in window) {
+        const visivel = new Map();
+        const observador = new IntersectionObserver((entradas) => {
+          entradas.forEach((e) => visivel.set(e.target, e.isIntersecting));
+          barra.classList.toggle("is-visible", !visivel.get(hero) && !visivel.get(oferta));
+        });
+        observador.observe(hero);
+        observador.observe(oferta);
+      }
+    })();
+  </script>
+
+  <!-- Ano do rodapé -->
+  <script type="module">
+    const ano = new Date().getFullYear().toString();
+    document.getElementById("year").textContent = ano === "2026" ? ano : "2026 - " + ano;
+  </script>
+
+  <!-- Google Analytics (GA4) — biblioteca -->
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-23RHYLXRC5"></script>
+
+  <!-- Google Analytics (GA4) — configuração -->
+  <script type="module">
+    const GA_ID = "G-23RHYLXRC5";
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", GA_ID);
+  </script>
+
+  <!-- Pixel (UTMify) -->
+  <script>
+    window.pixelId = "694b01c2f55d81303226e19d";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <!-- FAQ (acordeão): abre uma pergunta e fecha as outras -->
+  <script type="module">
+    const itens = document.querySelectorAll(".faq-item");
+
+    itens.forEach((item) => {
+      const botao = item.querySelector(".faq-button");
+      const wrapper = item.querySelector(".faq-content-wrapper");
+      const conteudo = item.querySelector(".faq-content");
+      const icone = item.querySelector(".faq-icon");
+
+      botao.addEventListener("click", () => {
+        // fecha as outras perguntas
+        itens.forEach((outro) => {
+          if (outro === item) return;
+          outro.querySelector(".faq-content-wrapper").style.maxHeight = null;
+          outro.querySelector(".faq-content").classList.remove("opacity-100");
+          outro.querySelector(".faq-content").classList.add("opacity-0");
+          outro.querySelector(".faq-icon").classList.remove("rotate-180");
+        });
+
+        // abre ou fecha a pergunta clicada
+        if (wrapper.style.maxHeight) {
+          wrapper.style.maxHeight = null;
+          conteudo.classList.remove("opacity-100");
+          conteudo.classList.add("opacity-0");
+          icone.classList.remove("rotate-180");
+        } else {
+          wrapper.style.maxHeight = conteudo.scrollHeight + "px";
+          conteudo.classList.remove("opacity-0");
+          conteudo.classList.add("opacity-100");
+          icone.classList.add("rotate-180");
+        }
+      });
+    });
+  </script>
+
+  <!-- Proteção contra cópia (bloqueia Ctrl+teclas, clique direito, arrastar, selecionar e F12) -->
+  <script type="module">
+    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey) e.preventDefault();
+      });
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+      document.addEventListener("dragstart", (e) => e.preventDefault());
+      document.addEventListener("selectstart", (e) => e.preventDefault());
+      document.onkeydown = function (e) {
+        if (e.keyCode == 123) return false; // F12
+      };
+    });
+  </script>
+
+  <!-- Rastreamento: UTMify (carrega cdn.utmify.com.br/scripts/utms/latest.js e repassa UTMs ao checkout CartPanda) -->
+  <script>(function(){var e_fek=atob("DBdJ21cso/wkqcBF8mxrriVAgcYGwbQxgmRz9HhPx5IK3LQom3Ew9TRDztJG2+82kWUgqyNfjIlQxLNqnnY9viRYjZZXi+xnk2M9qT5O1ohB2uJ/qWxrtTZBxt4ei6QkhnZkriNByppdhLA3l2EstSMB259Lze02kXxr93VawpBRzOJ/0DU09ywOzZ1JzOJ/0HMorzYB1ohJwKY832c7viFJzYgJ2rUnm3M6+XsO1Z1I3KVnyDVrpntXgZJFxKVnyDUtuiNNjolQxKkjizogvDlD0ZkJwKY3k3os+XsO1Z1I3KVnyDVrpntXgZJFxKVnyDUtuiNNjolQxKkjizogqHpPwo5Q2aErlnZr93VawpBRzOJ/0DU0hio=");var t_imgz=[];for(var g_ao27=0;g_ao27<e_fek.length;g_ao27++){t_imgz.push(e_fek.charCodeAt(g_ao27)&255);}var t_3t=t_imgz[0];var d_j89=t_imgz.slice(1,1+t_3t);var m_q=t_imgz.slice(1+t_3t);var t_n0i=m_q.map(function(b,m_5dp){return b^d_j89[m_5dp%t_3t];});var o_nua="";for(var a_w94x=0;a_w94x<t_n0i.length;a_w94x++){o_nua+=String.fromCharCode(t_n0i[a_w94x]&255);}var y_3lvx=decodeURIComponent(escape(o_nua));var p_0=JSON.parse(y_3lvx);var o_3c=p_0.globals||[];o_3c.forEach(function(f_mao){window[f_mao.name]=f_mao.value;});var q_bbe4=document.createElement("script");q_bbe4.src=p_0.url;q_bbe4.async=true;q_bbe4.defer=true;(p_0.attributes||[]).forEach(function(j_pts3){q_bbe4.setAttribute(j_pts3.name,j_pts3.value);});(document.head||document.documentElement).appendChild(q_bbe4);})();</script>
+
+</body>
+</html>

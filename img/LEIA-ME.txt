@@ -1,0 +1,32 @@
+FOTOS DA PÁGINA — PROJETOS DE SOM
+==================================
+
+Coloque as fotos nesta pasta (img/) com EXATAMENTE estes nomes.
+Assim que o arquivo existir, a foto aparece no lugar do desenho técnico.
+Enquanto o arquivo não existir, a página continua mostrando o desenho.
+
+As fotos são recortadas automaticamente para preencher o espaço (sem deformar).
+Mantenha o assunto principal no centro da foto.
+
+ARQUIVO                 ONDE APARECE                         PROPORÇÃO  TAMANHO SUGERIDO
+----------------------  -----------------------------------  ---------  ----------------
+hero.jpg                Imagem principal (topo da página)    5:4        1000 x 800
+conteudo-1.jpg          Bloco "Projetos de caixas de som"    16:10      800 x 500
+conteudo-2.jpg          Bloco "Medidas e detalhes..."        16:10      800 x 500
+conteudo-3.jpg          Bloco "Do projeto à montagem"        16:10      800 x 500
+galeria-1.jpg           Galeria: Caixa trio                  1:1        800 x 800
+galeria-2.jpg           Galeria: Caixa com subwoofer         1:1        800 x 800
+galeria-3.jpg           Galeria: Projeto compacto            1:1        800 x 800
+galeria-4.jpg           Galeria: Projeto para porta-malas    1:1        800 x 800
+galeria-5.jpg           Galeria: Caixa vertical              1:1        800 x 800
+galeria-6.jpg           Galeria: Caixa personalizada         1:1        800 x 800
+bonus-1.jpg             Bônus #1                             2:1        800 x 400
+bonus-2.jpg             Bônus #2                             2:1        800 x 400
+depoimento-1.jpg        Depoimento #1 (print)                livre      largura ~700
+depoimento-2.jpg        Depoimento #2 (print)                livre      largura ~700
+depoimento-3.jpg        Depoimento #3 (print)                livre      largura ~700
+
+DICAS
+- Para usar .png ou .webp, troque a extensão no index.html (procure pelo nome do arquivo).
+- Arquivos leves carregam mais rápido no celular: prefira fotos abaixo de 200 KB.
+- Atualize também o texto "alt" de cada foto no index.html se quiser descrever melhor a imagem (ajuda no SEO).
